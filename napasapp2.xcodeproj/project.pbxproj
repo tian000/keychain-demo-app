@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		44DD27602D80AC4A00723E61 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DD275F2D80AC4A00723E61 /* UniformTypeIdentifiers.framework */; };
+		44DD276C2D80AC4A00723E61 /* signwphantom.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 44DD275D2D80AC4A00723E61 /* signwphantom.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		44DD273D2D80997200723E61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +26,46 @@
 			remoteGlobalIDString = 44DD272A2D80997100723E61;
 			remoteInfo = napasapp2;
 		};
+		44DD276A2D80AC4A00723E61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44DD27232D80997100723E61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44DD275C2D80AC4A00723E61;
+			remoteInfo = signwphantom;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44DD27712D80AC4A00723E61 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				44DD276C2D80AC4A00723E61 /* signwphantom.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		44DD272B2D80997100723E61 /* napasapp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = napasapp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DD273C2D80997200723E61 /* napasapp2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = napasapp2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DD27462D80997200723E61 /* napasapp2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = napasapp2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DD275D2D80AC4A00723E61 /* signwphantom.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = signwphantom.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DD275F2D80AC4A00723E61 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		44DD276D2D80AC4A00723E61 /* Exceptions for "signwphantom" folder in "signwphantom" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 44DD275C2D80AC4A00723E61 /* signwphantom */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		44DD272D2D80997100723E61 /* napasapp2 */ = {
@@ -43,6 +81,14 @@
 		44DD27492D80997200723E61 /* napasapp2UITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = napasapp2UITests;
+			sourceTree = "<group>";
+		};
+		44DD27612D80AC4A00723E61 /* signwphantom */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				44DD276D2D80AC4A00723E61 /* Exceptions for "signwphantom" folder in "signwphantom" target */,
+			);
+			path = signwphantom;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +115,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44DD275A2D80AC4A00723E61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DD27602D80AC4A00723E61 /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +132,8 @@
 				44DD272D2D80997100723E61 /* napasapp2 */,
 				44DD273F2D80997200723E61 /* napasapp2Tests */,
 				44DD27492D80997200723E61 /* napasapp2UITests */,
+				44DD27612D80AC4A00723E61 /* signwphantom */,
+				44DD275E2D80AC4A00723E61 /* Frameworks */,
 				44DD272C2D80997100723E61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +144,17 @@
 				44DD272B2D80997100723E61 /* napasapp2.app */,
 				44DD273C2D80997200723E61 /* napasapp2Tests.xctest */,
 				44DD27462D80997200723E61 /* napasapp2UITests.xctest */,
+				44DD275D2D80AC4A00723E61 /* signwphantom.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		44DD275E2D80AC4A00723E61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44DD275F2D80AC4A00723E61 /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +167,12 @@
 				44DD27272D80997100723E61 /* Sources */,
 				44DD27282D80997100723E61 /* Frameworks */,
 				44DD27292D80997100723E61 /* Resources */,
+				44DD27712D80AC4A00723E61 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				44DD276B2D80AC4A00723E61 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				44DD272D2D80997100723E61 /* napasapp2 */,
@@ -163,6 +230,28 @@
 			productReference = 44DD27462D80997200723E61 /* napasapp2UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		44DD275C2D80AC4A00723E61 /* signwphantom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44DD276E2D80AC4A00723E61 /* Build configuration list for PBXNativeTarget "signwphantom" */;
+			buildPhases = (
+				44DD27592D80AC4A00723E61 /* Sources */,
+				44DD275A2D80AC4A00723E61 /* Frameworks */,
+				44DD275B2D80AC4A00723E61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				44DD27612D80AC4A00723E61 /* signwphantom */,
+			);
+			name = signwphantom;
+			packageProductDependencies = (
+			);
+			productName = signwphantom;
+			productReference = 44DD275D2D80AC4A00723E61 /* signwphantom.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +273,9 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 44DD272A2D80997100723E61;
 					};
+					44DD275C2D80AC4A00723E61 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = 44DD27262D80997100723E61 /* Build configuration list for PBXProject "napasapp2" */;
@@ -203,6 +295,7 @@
 				44DD272A2D80997100723E61 /* napasapp2 */,
 				44DD273B2D80997200723E61 /* napasapp2Tests */,
 				44DD27452D80997200723E61 /* napasapp2UITests */,
+				44DD275C2D80AC4A00723E61 /* signwphantom */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +316,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		44DD27442D80997200723E61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DD275B2D80AC4A00723E61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +353,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44DD27592D80AC4A00723E61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +372,11 @@
 			isa = PBXTargetDependency;
 			target = 44DD272A2D80997100723E61 /* napasapp2 */;
 			targetProxy = 44DD27472D80997200723E61 /* PBXContainerItemProxy */;
+		};
+		44DD276B2D80AC4A00723E61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44DD275C2D80AC4A00723E61 /* signwphantom */;
+			targetProxy = 44DD276A2D80AC4A00723E61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -551,6 +663,61 @@
 			};
 			name = Release;
 		};
+		44DD276F2D80AC4A00723E61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8BAG94S3TP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = signwphantom/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = signwphantom;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.napas.napasapp2.signwphantom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44DD27702D80AC4A00723E61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8BAG94S3TP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = signwphantom/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = signwphantom;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.napas.napasapp2.signwphantom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -586,6 +753,15 @@
 			buildConfigurations = (
 				44DD27572D80997200723E61 /* Debug */,
 				44DD27582D80997200723E61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44DD276E2D80AC4A00723E61 /* Build configuration list for PBXNativeTarget "signwphantom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44DD276F2D80AC4A00723E61 /* Debug */,
+				44DD27702D80AC4A00723E61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
